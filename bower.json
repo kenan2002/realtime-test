@@ -1,0 +1,9 @@
+{
+  "name": "my-realtime-test",
+  "description": "Test goodow realtime API",
+  "version": "0.0.0",
+  "homepage": "",
+  "dependencies": {
+    "realtime-store": "gh-pages"
+  }
+}
