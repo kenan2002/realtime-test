@@ -172,7 +172,9 @@ rtclient.RealtimeLoader.prototype.redirectTo = function(fileIds, userId) {
  */
 rtclient.RealtimeLoader.prototype.start = function() {
   // Bind to local context to make them suitable for callbacks.
-  var url = location.protocol + '//' + location.hostname + ':1986/channel';
+  var hostname = 'youryour.org';
+  var port = 1986;
+  var url = location.protocol + '//' + hostname + ':' + port + '/channel';
   window.store = new realtime.store.StoreImpl(url, null);
   if (this.registerTypes) {
     this.registerTypes();
