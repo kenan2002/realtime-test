@@ -61,6 +61,12 @@
       // Keeping one box updated with a custom EventListener.
       var textArea = document.getElementById('editor');
       var updateTextArea = function(e) {
+        if (e) {
+          console.log('****** operation ******');
+          console.log(e.type().toString());
+          console.log('index: ', e.index());
+          console.log('text: ', e.text());
+        }
         textArea.value = string;
       };
       string.onTextInserted(updateTextArea);
